@@ -1,87 +1,40 @@
-# localbuzz
+# LocalBuzz
 
-## Problem Statement
+AI marketing platform for small businesses with owner and influencer dashboards.
 
-Small businesses struggle to attract customers and build a strong online presence because they lack the time, expertise, and tools to create engaging marketing content and connect with the right influencers. Much of their marketing is manual, inconsistent, and ineffective—especially for businesses introducing unfamiliar products or cuisines.
+## Stack
 
-## Solution (1-liner):
-We use AI to generate marketing content and match businesses with the right influencers to run campaigns effortlessly.
+- Next.js + Tailwind CSS
+- Supabase-ready client and schema
+- Gemini (`gemini-2.0-flash`) route integration
+- Pollinations AI image generation
+- Resend email route integration
+- Twilio SMS route integration
+- Buffer social posting route integration
 
-## ✨ Key Features
+## Setup
 
-### AI Marketing Generator
-- Generate captions, hashtags, and CTAs
-- Create promotional image prompts
-- Generate full marketing campaigns
+1. Copy `.env.example` to `.env.local`
+2. Fill in API keys
+3. Run:
 
-### Influencer Discovery & Matching
-- Search influencers by:
-  - niche
-  - location
-  - followers
-  - engagement
-- AI-based match scoring
-
-### Campaign Automation Workflow
-- AI-generated campaign briefs
-- Influencer collaboration requests
-- AI-suggested pricing & deliverables
-- Approval-based workflow
-- Campaign status tracking
-
-### End-to-End Campaign Flow
-1. Business creates campaign
-2. AI recommends influencers
-3. Business sends request
-4. Influencer responds
-5. AI suggests pricing & deliverables
-6. Both approve plan
-7. Campaign goes live
-8. Influencer submits content
-9. Business approves
-10. Campaign completes
-11. Results dashboard generated
-
-
-## Installation & Setup
-# Clone the repo
-git clone https://github.com/your-username/your-repo.git
-
-# Install dependencies
+```bash
 npm install
-
-# Run development server
 npm run dev
+```
 
-## Workflow Overview
-Business Side
-Enter campaign details
-Generate marketing content
-Discover influencers
-Send collaboration requests
-Influencer Side
-Receive campaign request
-Accept / Reject / Counter
-Submit deliverables
-System Automation
-Campaign brief generation
-Pricing & deliverables suggestions
-Status transitions
-Reminders
-Results tracking
+## Key Routes
 
-## Impact
-Helps small businesses attract more customers
-Reduces manual marketing work
-Improves brand visibility
-Enables data-driven campaigns
+- `/` landing page
+- `/owner/dashboard`
+- `/owner/ai-assistant`
+- `/owner/events`
+- `/owner/influencers`
+- `/owner/campaign`
+- `/influencer/dashboard`
+- `/influencer/opportunities`
+- `/influencer/collaborations`
 
-## Future Improvements
-Social media integrations (Instagram, LinkedIn)
-Real-time analytics & ROI tracking
-Payment & contract system
-Creator marketplace expansion
-AI chat negotiation assistant
+## Supabase
 
-## License
-MIT License
+Run SQL from `supabase-schema.sql` in your Supabase SQL editor.
